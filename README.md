@@ -11,8 +11,7 @@ The project contains some useful functions. It follows an essential overview of 
 
 #### demo.py
 It shows a possible use of the higher level functions available in the project.
-
-\#TODO
+Currently three functions are called (with a possible set of parameters) and printed: __random\_cnf__, __random\_cnfs__ and __random\_pairs__. All of them are defined in _cnf\_generator/random_generators.py_. A description of the parameters is available in this file section at the end of this readme.
 
 #### cnf_generator/cnf.py
 This file contains the classes definitions of the needed entities:
@@ -63,3 +62,4 @@ Functions:
 *  __random\_pairs__: Iterate through pairs of cnfs generated based on the probabilities.  Parameters:
     * _how\_many\_pairs_ (Mandatory): Specifies how many random pairs the returned iterator must contain
     * _isomorph\_probability_, _non\_isomorph\_trivial\_probability_, _non\_isomorph\_non\_trivial\_probability_: Specify the probability to find these kind of pair in the iterator (float) - The sum of three values must be 1
+    * _isomorphic\_to\_result_: (Boolean) If true, this applies only to non-trivial non-isomorphic pairs - in these pairs, instead of the algorithm generated non-trivial non-isomorphic formula, a  different formula, isomorphic to the latter, is shown, so it's not immediately evident which type of pair it is (the generic algorithm generated non-trivial non-isomorphic formulas are usually easy to recognize and of a little practical use).
