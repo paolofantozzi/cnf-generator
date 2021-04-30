@@ -11,7 +11,7 @@ The project contains some useful functions. It follows an essential overview of 
 
 #### demo.py
 It shows a possible use of the higher level functions available in the project.
-Currently three functions are called (with a possible set of parameters) and printed: __random\_cnf__, __random\_cnfs__ and __random\_pairs__. All of them are defined in _cnf\_generator/random_generators.py_. A description of the parameters is available in this file section at the end of this readme.
+Currently three functions are called (with a possible set of parameters) and printed: __random\_cnf__, __random\_cnfs__ and __random\_pairs__. All of them are defined in _cnf\_generator/random_generators.py_. A description of the parameters is available under this file section, at the end of this readme.
 
 #### cnf_generator/cnf.py
 This file contains the classes definitions of the needed entities:
