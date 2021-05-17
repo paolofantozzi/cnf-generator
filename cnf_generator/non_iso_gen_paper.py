@@ -154,6 +154,6 @@ def non_trivial_non_isomorphic_cnf_generator(original_cnf: CNF, isomorphic_to_re
         cnf = CNF((original_cnf.clauses - set(to_change)) | changed)
 
         if isomorphic_to_result:
-            return cnf_isomorphic_generator(cnf)  # we return an isomorphic cnf to obfuscate the changes
+            return cnf_isomorphic_generator(cnf, **kwargs)  # we return an isomorphic cnf to obfuscate the changes
         return cnf
     raise GenerationFailedException
